@@ -290,6 +290,9 @@ a{
 
 @media (max-width: 576px) {
   .kid1box,.kid2box,.kid3box {
-    position: relative;
+    display: none;
+  }
+  svg{
+  	display: none;
   }
 }
