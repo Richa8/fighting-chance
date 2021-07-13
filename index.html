@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>A responsive website</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="customStyle.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	
+		
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+			<!--Brand-->
+				<div class="container">
+					<a class="navbar-brand" href="#">#Fighting Chance</a>
+					<!--list-->
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-item">
+							<a href="#" class="nav-link active">About Us</a>
+						</li>
+						<li class="nav-item"><a href="#" class="nav-link">Curriculum</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Impact</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Contribution</a></li>
+
+						
+					</ul>
+				</div>
+			</nav>
+		<div class="container-fluid pt-4 bgOrange">
+			<div class="container">
+				<hr class="dashed_white">
+				<svg height="150" width="150" class="svg1pos">
+				  <circle cx="50" cy="50" r="40" stroke="#E77C93" stroke-width="3" fill="white" fill-opacity="0" />
+				  <circle cx="80" cy="80" r="40" stroke="#FFFFFF" stroke-width="3" fill="white" fill-opacity="0" />
+				  Sorry, your browser does not support inline SVG.  
+				</svg> 
+				<svg height="150" width="150" class="svg2pos">
+					  <circle cx="50" cy="50" r="40" stroke="#FDBD3F" stroke-width="3" fill="white" fill-opacity="0" />
+					  <circle cx="80" cy="80" r="40" stroke="#FFFFFF" stroke-width="3" fill="white" fill-opacity="0" />
+					  Sorry, your browser does not support inline SVG.  
+				</svg>
+				<div class="row">
+					<div class="col-sm-7">
+						<h1>Some Text - How it Looks!</h1>
+						<hr align="left" class="underline">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<a href="#" class="btn btn-primary btn-lg">Learn More</a>
+					</div>
+					<div class="col-sm-5">
+						<div class="kid1box">
+							<img src="images/kid1.png" class="responsive">
+						</div>
+						<div class="kid2box">
+							<img src="images/kid2.png" class="responsive">
+						</div>
+						<div class="kid3box">
+							<img src="images/kid3.png" class="responsive">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		
+	</div>
+	<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5">
+							<h1>What we teach!</h1>
+							<hr class="underline" align="left">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-5 card bg-blue text-white">
+							    <div class="card-body">
+							    	<img src="images/icons8-microsoft-word-2019-144.png">
+							    	<h3 class="text-white">Microsoft Word</h3>
+							    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wordSyl">
+		    						Check Syllabus
+		  							</button>
+							    </div>
+							</div>
+							<div class="col-sm-5 card bg-white ">
+							    <div class="card-body">
+							    	<img src="images/icons8-microsoft-powerpoint-144.png">
+							    	<h3>Microsoft Powerpoint</h3>
+							    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wordSyl">
+		    						Check Syllabus
+		  							</button>	
+							    </div>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-5 card bg-blue text-white">
+							    <div class="card-body">
+							    	<img src="images/icons8-microsoft-excel-2019-144.png">
+							    	<h3 class="text-white">Microsoft Excel</h3>
+							    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wordSyl">
+		    						Check Syllabus
+		  							</button>
+							    </div>
+							</div>
+							<div class="col-sm-5 card bg-white ">
+							    <div class="card-body">
+							    	<img src="images/icons8-chrome-144.png">
+							    	<h3>Chrome- Web Browsing </h3>
+							    	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wordSyl">
+		    						Check Syllabus
+		  							</button>
+							    </div> 
+							</div>
+						</div>
+						</div>
+					</div>
+					<!--Modals for syllabus-->
+
+						<div class="modal fade" id="wordSyl">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						      
+						        <!-- Modal Header -->
+						        <div class="modal-header">
+						          <h4 class="modal-title">Word Syllabus</h4>
+						          <button type="button" class="close" data-dismiss="modal">×</button>
+						        </div>
+						        
+						        <!-- Modal body -->
+						        <div class="modal-body">
+						          <p>Hello- This is a fast pased microsoft word syllabus that has been prepared for quick but thorough understanding of the application.</p>
+						          <p>After completion of this module kids not only know how to use MS Word but also have an understanding of how to learn any new feature.</p>
+						          <h3>Topics Covered:</h3>
+						          <ul>
+						          	<li>Topic 1</li>
+						          	<li>Topic 2</li>
+						          	<li>Topic 3</li>
+						          	<li>Topic 4</li>
+						          </ul>
+						        </div>
+						        
+						        <!-- Modal footer -->
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						        </div>
+						        
+						      </div>
+						    </div>
+						  </div>
+
+
+				</div>
+			</div>
+
+<!--Section 3-->
+		<div class="container-fluid bgOrange">
+			<div class="container">
+				<div class="row">
+						<div class="col-sm-5">
+							<h1>Our Impact!</h1>
+							<hr class="underline" align="left">
+						</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="circle ">
+							<h1 class="center">200</h1>
+						</div>
+						<h3 align="center">Number Heading</h3>
+						<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et </p>
+					</div>
+					<div class="col-sm-4">
+						<div class="circle circle2">
+							<h1 class="center text-white">200</h1>
+						</div>
+						<h3 align="center">Number Heading</h3>
+						<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et </p>
+					</div>
+					<div class="col-sm-4">
+						<div class="circle circle3">
+							<h1 class="center text-white">200</h1>
+						</div>
+						<h3 align="center">Number Heading</h3>
+						<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et </p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--Section 4-->
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row">
+						<div class="col-sm-5">
+							<h1>Our Team!</h1>
+							<hr class="underline" align="left">
+						</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="col-sm-6">
+							<div class="row">
+								
+							</div>
+							<div class="row">
+								
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								
+							</div>
+							<div class="row">
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h1>Some Text</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrudatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
