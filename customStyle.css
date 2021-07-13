@@ -295,4 +295,7 @@ a{
   svg{
   	display: none;
   }
+	.bg-white{
+	margin-left:0px;
+	}
 }
