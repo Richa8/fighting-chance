@@ -75,9 +75,7 @@ hr.underline{
 }
 
 
-.container-fluid{
-	height: 100vh;
-}
+
 .kid1box{
 	position: absolute;
     top: 50px;
@@ -210,4 +208,88 @@ h1.center{
 {
 	background: #FDBD3F;
     color: #FFFFFF;
+}
+.girl1{
+	width: 170px;
+	height: 190px;
+	background: #FDBD3F;
+	border-radius: 0px 94px 0px 0px;
+	margin: 10px;
+	object-fit: contain;
+}
+.boy1{
+	width: 170px;
+	height: 190px;
+	background: #03565C;
+	border-radius: 94px 0px 0px 0px;
+	margin: 10px;
+}
+.girl2{
+	width: 170px;
+	height: 190px;
+	background: #03565C;
+	border-radius: 0px 0px 94px 0px;
+	margin: 10px;
+
+	object-fit: contain;
+}
+.boy2{
+	width: 170px;
+	height: 190px;
+	background: #FDBD3F;
+	border-radius: 0px 0px 0px 94px;
+	margin: 10px;
+}
+.responsive{
+	width: 160px;
+	height: 180px;
+	object-fit: contain;
+	margin: 5px;
+}
+.imageGroup{
+	width: 85%;
+	height: 400px;
+	background: #ED865D;
+	border-radius: 50%;
+}
+.imageGroup img{
+	width: 500px;
+	height: 300px;
+	object-fit: contain;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ED865D;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ED865D;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ED865D;
+}
+.contri-form{
+	margin-top: 60px;
+}
+
+a{
+	font-size: 1.2em;
+	font-weight: 200px;
+	display: inline-block;
+	padding: 5px 10px;
+	text-decoration: none;
+	background: transparent;
+	color: #ED865D;
+}
+.footer{
+	padding: 20px;
+}
+/*adding responsiveness*/
+
+@media (max-width: 576px) {
+  .kid1box,.kid2box,.kid3box {
+    position: relative;
+  }
 }
