@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>#Fighting Chance</title>
+	<title>A responsive website</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,14 +10,16 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  	
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
+  	  
+  	<script type="text/javascript" src="./js/myJs.js">
+		</script>
 </head>
 <body>
 	
 		
-			<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+					<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 			<!--Brand-->
 				<div class="container">
 						<a class="navbar-brand" href="#">#Fighting Chance</a>
@@ -30,13 +32,13 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ml-md-auto">
 						<li class="nav-item">
-							<a href="#" class="nav-link active">About Us</a>
+							<a href="#" class="nav-link active" onclick="changeActive(0)">About Us</a>
 						</li>
-						<li class="nav-item"><a href="#curriculum" class="nav-link">Curriculum</a></li>
-						<li class="nav-item"><a href="#impact" class="nav-link">Impact</a></li>
-						<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-						<li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
-						<li class="nav-item"><a href="#contribution" class="nav-link">Contribution</a></li>
+						<li class="nav-item"><a href="#curriculum" class="nav-link" onclick="changeActive(1)">Curriculum</a></li>
+						<li class="nav-item"><a href="#impact" class="nav-link" onclick="changeActive(2)">Impact</a></li>
+						<li class="nav-item"><a href="#contact" class="nav-link" onclick="changeActive(3)">Contact</a></li>
+						<li class="nav-item"><a href="#team" class="nav-link" onclick="changeActive(4)">Team</a></li>
+						<li class="nav-item"><a href="#contribution" class="nav-link" onclick="changeActive(5)">Contribution</a></li>
 
 						
 					</ul>
@@ -46,7 +48,7 @@
 		<div class="container-fluid pt-4 pb-5 bgOrange">
 			<div class="container">
 				<hr class="dashed_white">
-				<svg height="150" width="150" class="svg1pos">
+				<svg height="150" width="150" class="svg1pos wow">
 				  <circle cx="50" cy="50" r="40" stroke="#E77C93" stroke-width="3" fill="white" fill-opacity="0" />
 				  <circle cx="80" cy="80" r="40" stroke="#FFFFFF" stroke-width="3" fill="white" fill-opacity="0" />
 				  Sorry, your browser does not support inline SVG.  
@@ -67,13 +69,13 @@
 						<a href="#" class="btn btn-primary btn-lg">Learn More</a>
 					</div>
 					<div class="col-md-5">
-						<div class="kid1box">
+						<div class="kid1box wow animate__fadeInRight" data-wow-duration="1s" >
 							<img src="images/kid1.png" class="responsive">
 						</div>
-						<div class="kid2box">
+						<div class="kid2box wow animate__fadeInUp" data-wow-duration="1.5s">
 							<img src="images/kid2.png" class="responsive">
 						</div>
-						<div class="kid3box">
+						<div class="kid3box wow animate__zoomIn" data-wow-duration="2s">
 							<img src="images/kid3.png" class="responsive">
 						</div>
 					</div>
@@ -93,7 +95,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="row">
-								<div class="col-md-5 card mb-5 bg-blue text-white">
+								<div class="col-md-5 card mb-5 bg-blue text-white wow animate__fadeInUp" data-wow-duration="1s">
 							    <div class="card-body">
 							    	<img src="images/icons8-microsoft-word-2019-144.png">
 							    	<h3 class="text-white">Microsoft Word</h3>
@@ -102,7 +104,7 @@
 		  							</button>
 							    </div>
 							</div>
-							<div class="col-md-5 card mb-5 bg-white ">
+							<div class="col-md-5 card mb-5 bg-white wow animate__fadeInUp" data-wow-duration="1.25s">
 							    <div class="card-body">
 							    	<img src="images/icons8-microsoft-powerpoint-144.png">
 							    	<h3>Microsoft Powerpoint</h3>
@@ -115,7 +117,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="row">
-								<div class="col-md-5 card mb-5 bg-blue text-white">
+								<div class="col-md-5 card mb-5 bg-blue text-white wow animate__fadeInUp" data-wow-duration="1.75s">
 							    <div class="card-body">
 							    	<img src="images/icons8-microsoft-excel-2019-144.png">
 							    	<h3 class="text-white">Microsoft Excel</h3>
@@ -124,7 +126,7 @@
 		  							</button>
 							    </div>
 							</div>
-							<div class="col-md-5 card mb-5 bg-white ">
+							<div class="col-md-5 card mb-5 bg-white wow animate__fadeInUp" data-wow-duration="2s">
 							    <div class="card-body">
 							    	<img src="images/icons8-chrome-144.png">
 							    	<h3>Chrome- Web Browsing </h3>
@@ -149,7 +151,7 @@
 						        </div>
 						        
 						        <!-- Modal body -->
-						        <div class="modal-body">
+						        <div class="modal-body row">
 						          <p>Hello- This is a fast pased microsoft word syllabus that has been prepared for quick but thorough understanding of the application.</p>
 						          <p>After completion of this module kids not only know how to use MS Word but also have an understanding of how to learn any new feature.</p>
 						          <h3>Topics Covered:</h3>
@@ -184,7 +186,7 @@
 						</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 wow animate__fadeInRight">
 						<div class="circle ">
 							<h1 class="center">200</h1>
 						</div>
@@ -200,7 +202,7 @@
 						<p align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei-mdod
 						tempor incididunt ut labore et </p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 wow animate__fadeInLeft">
 						<div class="circle circle3">
 							<h1 class="center text-white">200</h1>
 						</div>
@@ -223,19 +225,19 @@
 				<div class="row">
 					<div class="col-xs-3">
 						
-							<div class="row girl1">
+							<div class="row girl1 wow animate__fadeInTopLeft" data-wow-duration="1.5s">
 								<img src="images/girl1.png" width="150" height="150" class="responsive">
 							</div>
-							<div class="row girl2">
+							<div class="row girl2 wow animate__fadeInBottomLeft" data-wow-duration="1.5s">
 								<img src="images/girl2.png" width="150" height="150" class="responsive">
 							</div>
 
 						</div>
 						<div class="col-xs-3">
-							<div class="row boy1">
+							<div class="row boy1 wow animate__fadeInTopRight" data-wow-duration="1.5s">
 								<img src="images/boy1.png" width="150" height="150" class="responsive">
 							</div>
-							<div class="row boy2">
+							<div class="row boy2 wow animate__fadeInBottomRight" data-wow-duration="1.5s">
 								<img src="images/boy2.png" width="150" height="150" class="responsive">
 							</div>
 						</div>
@@ -280,7 +282,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="imageGroup">
-							<img src="images/kids.png" class="img-fluid">
+							<img src="images/kids.png" class="img-fluid wow animate__zoomIn">
 						</div>
 					</div>
 				</div>
@@ -356,5 +358,25 @@
 				</div>
 			</div>
 		</div>
+		<script src="js/wow.min.js"></script>
+              <script>
+              
+              var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animate__animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+              </script>
+
 </body>
 </html>
